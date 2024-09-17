@@ -1,0 +1,152 @@
+.history-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .left-section, .right-section {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .left-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center content vertically */
+    width: 100%;
+    background-color: #2f855a;
+    color: white;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  .left-section .title {
+    font-size: 48px;
+  }
+  
+  .left-section .image-container {
+    width: 300px;
+    height: auto;
+  }
+  
+  .left-section .award-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .right-section {
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+  
+  .image-container {
+    border: 4px solid #9f7aea;
+    width: 288px;
+    height: 288px;
+  }
+  
+  .award-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .right-section {
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .awards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .award-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .award-icon {
+    width: 64px;
+    height: 64px;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+  
+  .award-year {
+    color: #e53e3e;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .award-description {
+    color: #4a5568;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .history-container {
+      flex-direction: column;
+    }
+    .left-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+    }
+  
+    .award-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .award-icon {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 28px;
+    }
+  
+    .award-year {
+      font-size: 20px;
+    }
+  
+    .award-description {
+      font-size: 12px;
+    }
+  }
+  
